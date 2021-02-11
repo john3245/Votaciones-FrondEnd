@@ -1,0 +1,18 @@
+.imagenv
+ {
+     float: left;
+     margin-left: 8rem;
+     margin-top: 10rem;
+     width: 25rem;
+     height: 40rem;
+    
+ }
+
+ .registrar
+ {
+     float: right;
+     margin-right: 8em;
+     margin-top: 12rem;
+     height: 20rem;
+     
+ }
