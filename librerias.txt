@@ -1,0 +1,12 @@
+Graficos
+npm install --save ng2-charts
+
+
+npm install --save chart.js
+
+Boopstrap
+
+npm install bootstrap@next
+
+Notificación 
+ng add @angular/material

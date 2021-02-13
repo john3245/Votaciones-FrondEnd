@@ -1,0 +1,18 @@
+<div  class="callout">
+<h1 mat-dialog-title><i class="
+    
+    fas fa-trash"></i> <font color="red">  Advertencia</font> </h1>
+</div>
+    <div mat-dialog-content>
+        <p>{{mensaje}}</p>
+    </div>
+    
+    <div mat-dialog-actions class="uno" >
+    
+        <div class="dos"> <button   mat-button (click)="confirmado()" cdkFocusInitial  class="btn btn-outline-danger ">si</button>
+        <div class="dos"> <button   mat-button (click)="cerrarDialogo()" cdkFocusInitial  class="btn btn-outline-success ">No</button>
+           
+        </div>
+        
+       
+    </div>

@@ -1,0 +1,30 @@
+.uno {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.dos
+{
+     /* IMPORTANTE */
+  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn{
+    
+    padding: 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 2px;
+    outline: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-weight: 400;
+    font-size: 25px;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+    transition: all .2s;
+}
+

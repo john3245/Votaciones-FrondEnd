@@ -4,6 +4,10 @@ import { AppComponent } from './app.component';
 import {HttpClientModule} from '@angular/common/http'
 import {FormsModule} from '@angular/forms'
 import {RouterModule,Routes} from '@angular/router'
+//notificacion 
+
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
 
 //graficos
 import { ChartsModule } from 'ng2-charts';
@@ -25,6 +29,9 @@ import { GanadormatrimonioComponent } from './ganadormatrimonio/ganadormatrimoni
 import { GanadorsacerdoteComponent } from './ganadorsacerdote/ganadorsacerdote.component';
 import { Finalistassacerdote70Component } from './finalistassacerdote70/finalistassacerdote70.component';
 import { Finalistassacerdote50Component } from './finalistassacerdote50/finalistassacerdote50.component';
+import { ValidarcamposComponent } from './validarcampos/validarcampos.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NotificacioncorreoComponent } from './notificacioncorreo/notificacioncorreo.component';
 
 
 const routes :Routes=[
@@ -64,7 +71,9 @@ const routes :Routes=[
     GanadormatrimonioComponent,
     GanadorsacerdoteComponent,
     Finalistassacerdote70Component,
-    Finalistassacerdote50Component
+    Finalistassacerdote50Component,
+    ValidarcamposComponent,
+    NotificacioncorreoComponent
   ],
   imports: [
     BrowserModule,
@@ -72,10 +81,17 @@ const routes :Routes=[
     FormsModule,
     HttpClientModule,
     ChartsModule,
-    RouterModule.forRoot(routes)
+    MatDialogModule, // <--- Aquí
+    BrowserAnimationsModule, // <--- Aquí
+    MatButtonModule,
+    RouterModule.forRoot(routes),
+    BrowserAnimationsModule
   ],
   exports: [RouterModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [
+    ValidarcamposComponent// <--- Aquí
+  ]
 })
 export class AppModule { }

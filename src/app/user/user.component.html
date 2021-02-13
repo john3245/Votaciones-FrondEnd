@@ -1,3 +1,17 @@
+<ng-container *ngIf="labelcontra;" >
+    <div class="contrasena">
+<form class="form-inline">
+        
+    <div class="form-group mx-sm-3 mb-2">
+        <label for="inputPassword2" class="sr-only">Correo</label>
+        <input type="password" class="form-control" style="WIDTH: 15rem; " type="text" name="contrasena" id="contrasena" [(ngModel)]="elements.contrasena" [ngModelOptions]="{standalone: true}" required>
+    </div>
+    <button type="submit" class="btn btn-primary mb-2" (click)="seguridad()" >Aceptar</button>
+</form>
+</div>
+</ng-container>
+
+<ng-container *ngIf="panel;" >
 <div class="tabla">
     <div class="numero"><h1 class="display-3"> </h1>
         <h1 class="display-6"></h1>
@@ -29,21 +43,21 @@
                         <td>Morelia</td>
                         <td>Bajío</td>
                         <td>ejemplo</td>
-                        <td><button (click)="eliminar()" type="button" class="btn btn-danger"><i class="fas fa-trash"></i></button></td>
+                        <td><button (click)="mostrarDialogo()" type="button" class="btn btn-danger"><i class="fas fa-trash"></i></button></td>
                     </tr>
                     <tr>
                         <th scope="row">Rubén y Rosario Trujillo</th>
                         <td>Morelia</td>
                         <td>Bajío</td>
                         <td>ejemplo</td>
-                        <td> <button (click)="eliminar()" type="button" class="btn btn-danger"><i class="fas fa-trash"></i></button></td>
+                        <td> <button (click)="mostrarDialogo()" type="button" class="btn btn-danger"><i class="fas fa-trash"></i></button></td>
                     </tr>
                     <tr>
                         <th scope="row">Rubén y Rosario Trujillo</th>
                         <td>Morelia</td>
                         <td>Bajío</td>
                         <td>ejemplo</td>
-                        <td> <button (click)="eliminar()" type="button" class="btn btn-danger"><i class="fas fa-trash"></i></button></td>
+                        <td> <button (click)="mostrarDialogo()" type="button" class="btn btn-danger"><i class="fas fa-trash"></i></button></td>
                     </tr>
                 </tbody>
             </table>
@@ -52,3 +66,4 @@
 </div>
 
 </div>
+</ng-container>
