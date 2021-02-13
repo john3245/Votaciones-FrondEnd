@@ -2,14 +2,24 @@
 
           <nav class="navbar navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                  <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-top">
-                 Encuentro Matrimonial
+                <a class="navbar-brand" >
+                 
+                <font color="white">Encuentro Matrimonial Mundial</font><br>
+                <font size="3"  color="white">Secretariado Latinoamericano</font>
                 </a>
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" routerLink="/home">Inicio</a>
+                    </li>
+                    
+             </ul>
+
                 
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" routerLink="/login">Login</a>
+
                   </li>
                   
            </ul>
@@ -19,10 +29,25 @@
               </li>
               
        </ul>
+
+       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/home">Cerra sesión</a>
+          </li>
+          
+   </ul>
                
               </div>
               
               
           </nav>
 
+         
+<div class="admin">
+  
+
+  <app-admin></app-admin>
+</div>
+          
+          
           <router-outlet></router-outlet>

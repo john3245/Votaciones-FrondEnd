@@ -1,0 +1,46 @@
+.anuncio
+{
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 4rem;
+    width: 50rem;
+    height: 15rem;
+    border-radius: 1rem;
+    
+    background-color:white;
+}
+
+
+.imagen
+{
+    float: left;
+    width: 30rem;
+    height: 25rem;
+  
+   
+}
+
+
+.palabras
+{
+    margin-top: 2rem;
+   
+    
+    text-align: center;
+}
+
+.select
+{
+    border-radius: 1rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    background-color:white;
+    width: 20rem;
+    height: 15rem;
+    text-align: center;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+    transition: all .2s;
+}
+.select:hover, .select:active, .select:focus {
+    -ms-transform: scale(1.1);
+        transform: scale(1.1); }

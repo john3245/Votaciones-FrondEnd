@@ -1,0 +1,89 @@
+
+<a  class="nav-link active" aria-current="page" (click)="activar()" >Modo admin</a> 
+<ng-container *ngIf="labelcontra;" >
+
+<form class="form-inline">
+        
+    <div class="form-group mx-sm-3 mb-2">
+        <label for="inputPassword2" class="sr-only">Correo</label>
+        <input type="password" class="form-control" style="WIDTH: 10rem; " type="text" name="contrasena" id="contrasena" [(ngModel)]="elements.contrasena" [ngModelOptions]="{standalone: true}" required>
+    </div>
+    <button type="submit" class="btn btn-primary mb-2" (click)="seguridad()" >Aceptar</button>
+</form>
+</ng-container>
+
+
+<ng-container *ngIf="panel;" >
+    <div class="adminmarco">
+<form class="form-inline">
+        
+    <div class="form-group mx-sm-3 mb-2">
+        <label for="inputPassword2" class="">Votaciones Matrimonio</label>
+        
+    </div>
+    <button type="" class="btn btn-success mb-2">Activar</button>
+    <button type="" class="btn btn-danger mb-2">Desactivar</button>
+</form>
+
+<form class="form-inline">
+        
+    <div class="form-group mx-sm-3 mb-2">
+        <label for="inputPassword2" class="">Votaciones Sacerdote</label>
+        
+    </div>
+    <button type="" class="btn btn-success mb-2">Activar</button>
+    <button type="" class="btn btn-danger mb-2">Desactivar</button>
+</form>
+
+<form class="form-inline">
+        
+    <div class="form-group mx-sm-3 mb-2">
+        <label for="inputPassword2" class="">Finalistas</label>
+        
+    </div>
+    <button type="" class="btn btn-success mb-2">Activar</button>
+    <button type="" class="btn btn-danger mb-2">Desactivar</button>
+</form>
+
+<form class="form-inline">
+        
+    <div class="form-group mx-sm-3 mb-2">
+        <label for="inputPassword2" class="">Registro</label>
+        
+    </div>
+    <button type="" class="btn btn-success mb-2">Activar</button>
+    <button type="" class="btn btn-danger mb-2">Desactivar</button>
+</form>
+
+<form class="form-inline">
+        
+    <div class="form-group mx-sm-3 mb-2">
+        <label for="inputPassword2" class="">Ver usuarios</label>
+        
+    </div>
+    <button type="" class="btn btn-success mb-2">Activar</button>
+    <button type="" class="btn btn-danger mb-2">Desactivar</button>
+</form>
+
+<form class="form-inline">
+        
+    <div class="form-group mx-sm-3 mb-2">
+        <label for="inputPassword2" class="">Reiniciar Votaciones Matrimonios</label>
+        
+    </div>
+    <button type="" class="btn btn-warning mb-2">Reiniciar</button>
+    
+</form>
+<form class="form-inline">
+        
+    <div class="form-group mx-sm-3 mb-2">
+        <label for="inputPassword2" class="">Reiniciar Votaciones Sacerdote</label>
+        
+    </div>
+    <button type="" class="btn btn-warning mb-2">Reiniciar</button>
+    
+</form>
+
+</div>
+
+</ng-container>

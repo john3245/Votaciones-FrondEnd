@@ -1,0 +1,51 @@
+<div class="tabla">
+
+    <div class="numero"><h1 class="display-3"> Vota por los finalistas </h1>
+        <h1 class="display-6">Recueda que esta Votación esta contemplada al 50% + 1 de los votos</h1>
+    </div>
+<div class="col-lg-12">
+    <div class="card spur-card">
+        <div class="card-header">
+            <div class="spur-card-icon">
+                <i class="fas fa-church"></i>
+            </div>
+            <div class="spur-card-title">Votación de Sacerdotes Finalistas</div>
+        </div>
+        <div class="card-body ">
+            <table class="table table-hover table-in-card">
+                <thead>
+                    <tr>
+                       
+                        <th scope="col">Matrimonio</th>
+                        <th scope="col">Ciudad de Origen</th>
+                        <th scope="col">Región</th>
+                        <th scope="col">Votar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Rubén y Rosario Trujillo</th>
+                        <td>Morelia</td>
+                        <td>Bajío</td>
+                        <td> <a  *ngIf="visible==true" (click)="votar()" class="btn btn-danger mb-1"> <i  class="fas fa-heart"></i> </a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Rubén y Rosario Trujillo</th>
+                        <td>Morelia</td>
+                        <td>Bajío</td>
+                        <td> <a href="#!" class="btn btn-danger mb-1"> <i class="fas fa-heart"></i> </a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Rubén y Rosario Trujillo</th>
+                        <td>Morelia</td>
+                        <td>Bajío</td>
+                        <td> <a href="#!" class="btn btn-danger mb-1"> <i class="fas fa-heart"></i> </a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div *ngIf="terminar==true" class="boton"><button  type="button" [routerLink]="['/home']" routerLinkActive="router-link-active"  class="btn btn-danger">Terminar</button></div>
+</div>
+
