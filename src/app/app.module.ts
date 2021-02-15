@@ -32,6 +32,9 @@ import { Finalistassacerdote50Component } from './finalistassacerdote50/finalist
 import { ValidarcamposComponent } from './validarcampos/validarcampos.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NotificacioncorreoComponent } from './notificacioncorreo/notificacioncorreo.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { Ganadormatrimonio50Component } from './ganadormatrimonio50/ganadormatrimonio50.component';
+import { Ganadorsacerdote50Component } from './ganadorsacerdote50/ganadorsacerdote50.component';
 
 
 const routes :Routes=[
@@ -49,7 +52,10 @@ const routes :Routes=[
   {path : '70sacerdote',component: Finalistassacerdote70Component},
   {path : '50sacerdote',component: Finalistassacerdote50Component},
   {path : 'ganadormatrimonio',component: GanadormatrimonioComponent},
-  {path : 'ganadorsacerdote',component: GanadorsacerdoteComponent}
+  {path : 'ganadorsacerdote',component: GanadorsacerdoteComponent},
+  {path : 'ganadormatrimonio50',component: Ganadormatrimonio50Component},
+  {path : 'ganadorsacerdote50',component: Ganadorsacerdote50Component},
+  {path : '**',component: NotFoundComponent}
   
   
 
@@ -73,7 +79,10 @@ const routes :Routes=[
     Finalistassacerdote70Component,
     Finalistassacerdote50Component,
     ValidarcamposComponent,
-    NotificacioncorreoComponent
+    NotificacioncorreoComponent,
+    NotFoundComponent,
+    Ganadormatrimonio50Component,
+    Ganadorsacerdote50Component
   ],
   imports: [
     BrowserModule,
